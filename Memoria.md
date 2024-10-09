@@ -34,6 +34,17 @@ Tras varias pruebas y errores me di cuenta de que el mueble que esta en la habit
 ### Engorde de los obstaculos 
 Despues de que el robot se quedara encajado varias veces al lado de la mesilla del dormitorio, entre las patas de la mesa... Decidi en engordar los obstaculos en una celdila en cada direcion, pero claro esto hacia que el robot no llegara a algunos sitios. Por tanto despues de varias pruebas, es solo necesario engordarlos en el Sur.
 
+![image](https://github.com/user-attachments/assets/31cf0125-551d-4735-a91c-b771d0321050)
+
+
+
+
+
+
+
+
+
+
 
 ![image](https://github.com/cescarcena2021/RoboticaMovil2023-2024/assets/102520602/d12ba1b4-56cc-4fb9-83d8-cd307dbe7556)
 
