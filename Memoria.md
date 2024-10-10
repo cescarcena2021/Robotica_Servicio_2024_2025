@@ -38,7 +38,7 @@ Después de que el robot se quedara encajado varias veces al lado de la mesilla 
 
 # Demostracion 
 
-El video demotrativo esta en el siguiente [enlace](https://drive.google.com/file/d/1Jx_NMSYi-aFzczTGgYIRwAE0oGZJHlW8/view?usp=drive_link) ya que es muy largo y no se puede subir aqui directamente. En el podemos comprobar su funcionamiento completo aunque devido al estres del procesador, el mapa de celdillas deja de funcionar a mitad del video y el mapa de limpiza se retrasa respecto al mundo de gazebo 
+El video demotrativo esta en el siguiente [enlace](https://drive.google.com/file/d/1Jx_NMSYi-aFzczTGgYIRwAE0oGZJHlW8/view?usp=drive_link) ya que es muy largo y no se puede subir aqui directamente. En el podemos comprobar su funcionamiento completo aunque devido al estres del procesador, el mapa de celdillas deja de funcionar a mitad del video y el mapa de limpiza se retrasa respecto al mundo de gazebo. Aclarar que el video esta acelerado. 
 
 ![image](https://github.com/user-attachments/assets/31cf0125-551d-4735-a91c-b771d0321050)
 
