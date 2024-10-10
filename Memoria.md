@@ -36,4 +36,10 @@ Tras varias pruebas y errores, me di cuenta de que el mueble que está en la hab
 ### Engrosamiento de los obstáculos  
 Después de que el robot se quedara encajado varias veces al lado de la mesilla del dormitorio, entre las patas de la mesa, decidí engrosar los obstáculos una celdilla en cada dirección. Sin embargo, esto hacía que el robot no llegara a algunos sitios. Por lo tanto, después de varias pruebas, descubrí que solo era necesario engrosarlos en el Sur.
 
+# Demostracion 
+
+El video demotrativo esta en un fichero dentro de este repositio en la rama main
+
 ![image](https://github.com/user-attachments/assets/31cf0125-551d-4735-a91c-b771d0321050)
+
+
