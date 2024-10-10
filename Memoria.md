@@ -22,6 +22,9 @@ Como he dicho antes, el algorimo que se proporciona es BSA pero en mi caso he en
 Esto lo he conseguido estableciendo un oren de prioridades a las direciones posibles que puede tomar el robot. Ademas de eso he añadido tambien un estado de "busqueda de vecinos" en el cual cuando no tiene mas vecinos a los que ir porque se ha quedo atrapado, busca el vecino memorizado mas cercano.
 Esto tambien puede ser un problema ya que si entre el vecino y la pisocion del rebot se encontrara una pared este no sabria de que modo esquivarla, por ello he añadido el famoso y conocido algoritmo BFS que es capaz de encontar el path mas optimo hacia el vecino teniendo en cuenta los obstaculos
 
+[Screencast from 10-10-2024 07:12:00 PM.webm](https://github.com/user-attachments/assets/84a93ae5-c22c-4872-bca3-acf78b43a251)
+
+
 ## Locomocion
 
 Una vez tenemos el path de las celdilla que te tenemos que seguir es sencillo ya que basta con alinear el robot con la siguiente celdilla usando el aungulo y la distancia euclidea. Una vez estamos mirando a la celdilla es tan sencillo como comandar velocidad hasta llegar a ella. Una vez estamos encima de ella volvemos ha hacer lo mismo con la siguiente.
