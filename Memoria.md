@@ -21,9 +21,12 @@ Como he mencionado antes, el algoritmo que se proporciona es BSA, pero en mi cas
 Esto lo he conseguido estableciendo un orden de prioridades a las direcciones posibles que puede tomar el robot. Además, he añadido también un estado de "búsqueda de vecinos", en el cual, cuando no tiene más vecinos a los que ir porque se ha quedado atrapado, busca el vecino memorizado más cercano.  
 Esto también puede ser un problema, ya que, si entre el vecino y la posición del robot se encuentra una pared, este no sabría cómo esquivarla. Por ello, he añadido el famoso y conocido algoritmo BFS, que es capaz de encontrar el camino más óptimo hacia el vecino teniendo en cuenta los obstáculos.
 
+[Screencast from 10-10-2024 07:12:00 PM.webm](https://github.com/user-attachments/assets/84a93ae5-c22c-4872-bca3-acf78b43a251)
+
 ## Locomoción 🚗​
 
 Una vez tenemos el camino de las celdillas que tenemos que seguir, es sencillo, ya que basta con alinear el robot con la siguiente celdilla usando el ángulo y la distancia euclidiana. Una vez estamos mirando hacia la celdilla, es tan sencillo como comandar velocidad hasta llegar a ella. Una vez estamos encima de ella, volvemos a hacer lo mismo con la siguiente.
+
 
 ## Problemas ⚙️​
 
@@ -32,3 +35,5 @@ Tras varias pruebas y errores, me di cuenta de que el mueble que está en la hab
 
 ### Engrosamiento de los obstáculos  
 Después de que el robot se quedara encajado varias veces al lado de la mesilla del dormitorio, entre las patas de la mesa, decidí engrosar los obstáculos una celdilla en cada dirección. Sin embargo, esto hacía que el robot no llegara a algunos sitios. Por lo tanto, después de varias pruebas, descubrí que solo era necesario engrosarlos en el Sur.
+
+![image](https://github.com/user-attachments/assets/31cf0125-551d-4735-a91c-b771d0321050)
