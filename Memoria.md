@@ -47,6 +47,10 @@ cuando han pasado 15 min desde que el dron despego, este "se queda sin bateria" 
 
 ## Demostracion 
 
+#### Envio de coordenadas
+
+#### Aterrizaje 
+
 
 
 
