@@ -23,6 +23,17 @@ prubas me di cuenta de que solo lo detectaba a el ya que era el unico que estaba
 
 ![image](https://github.com/user-attachments/assets/ad2819ae-6348-4b9a-b4c1-9317516a3027)
 
+![image](https://github.com/user-attachments/assets/eccd4c86-618c-454f-939e-85de4612b05d)
+
+![image](https://github.com/user-attachments/assets/7216dd68-2699-4ede-9066-6bfb6a119be5)
+
+![image](https://github.com/user-attachments/assets/e52a315b-9d6e-4d12-9e1d-dc7dd580b1ae)
+
+![image](https://github.com/user-attachments/assets/b437ebaf-ecb3-442c-ba2c-68650b39f363)
+
+
+
+
 ##  Problema de coordenadas🚗​
 
 Una vez hemos detectado a la persona, tenemos que saber sus coordenadas exactas, y en un primer momento se me ocurrio simplemete obtener la posicion del dron, pero claro si la persona se detecta en una esquina de
