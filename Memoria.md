@@ -21,21 +21,21 @@ Para saber si nuestra camara enfoca a personas o no, use el algoritmo de detecio
 sencillo ya que una vez lo fui a probar, me dicuenta de que solo detectaba a "Obama" lo cual me parecio raro ya que la camara pasaba por delante de todas las personas, pero solo lo detectaba a el. Despues de varias
 prubas me di cuenta de que solo lo detectaba a el ya que era el unico que estaba bien orientado respecto a la imagen, por tanto mi solucion fue rotar la imagen constantemenete para cubrir todos los possobles angulos
 
+![image](https://github.com/user-attachments/assets/ad2819ae-6348-4b9a-b4c1-9317516a3027)
+
 ##  Problema de coordenadas🚗​
 
 Una vez hemos detectado a la persona, tenemos que saber sus coordenadas exactas, y en un primer momento se me ocurrio simplemete obtener la posicion del dron, pero claro si la persona se detecta en una esquina de
-la camara la posicion del dron y la posion real de la persona no seria la misma. Por ello aplique un filto a la imagen para que solo se quedara con la caras del centro, de tal forma que las caras detectadas si
+la camara la posicion del dron y la posion real de la persona no seria la misma. Por ello dedidi bajar la alrura del dorn, de tal forma que las caras detectadas si
 estarian exactemente debajo del dron, por tanto las coordenadas serian mas exactas.
 
 ## Aterrizaje
 
 Cuando al dron se le esta acabando la bateria este decide volverse al barco y aterriza. Ya que no contamos con una funcion que nos proporcione la bateria del dron, he decido simular esto con un contador el cual
-cuando han pasado 30 min desde que el dron despego, este "se queda sin bateria" y decide volver al barco para ser cargado.
+cuando han pasado 15 min desde que el dron despego, este "se queda sin bateria" y decide volver al barco para ser cargado.
 
 ## Demostracion 
 
-El video demotrativo esta en el siguiente [enlace](https://drive.google.com/file/d/1Jx_NMSYi-aFzczTGgYIRwAE0oGZJHlW8/view?usp=drive_link) ya que es muy largo y no se puede subir aqui directamente. En el podemos comprobar su funcionamiento completo aunque devido al estres del procesador, el mapa de celdillas deja de funcionar a mitad del video y el mapa de limpiza se retrasa respecto al mundo de gazebo. Aclarar que el video esta acelerado. 
 
-![image](https://github.com/user-attachments/assets/31cf0125-551d-4735-a91c-b771d0321050)
 
 
