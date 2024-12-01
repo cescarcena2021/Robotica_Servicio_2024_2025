@@ -1,4 +1,4 @@
-# P2 Amazon Warehouse
+# P4 Amazon Warehouse
 
 ## Objetivo 🎯
 El objetivo de esta práctica es programar un robot estilo Roomba para que sea capaz de mover estanterías de un sitio a otro en un almacén.
