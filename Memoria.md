@@ -27,8 +27,7 @@ Para la locomoción, la verdad es que ha sido bastante fácil, ya que el *planne
 - **Planificación de la estantería**: este problema surgió ya que, cuando el robot ya tiene la estantería levantada, le resulta imposible encontrar un plan para ir a cualquier sitio, ya que se encuentra encerrado dentro de la estantería. Por ello, lo que hice fue borrar en el mapa las patas de la estantería una vez esta estaba levantada.
 
 ## Demostración
-https://youtu.be/eOzIqXXaWbQ
-
+https://youtu.be/ugSmKUb0JiA
 
 
 
