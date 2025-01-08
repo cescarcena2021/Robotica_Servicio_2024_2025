@@ -16,7 +16,7 @@ $$
 \begin{bmatrix}
 cos(α) & -sin(α) & 0 & X \\
 sin(α) & cos(α) & 0 & Y \\
-0 & 0 & 0 & Z \\
+0 & 0 & 1 & Z \\
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
