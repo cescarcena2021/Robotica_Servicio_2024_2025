@@ -12,22 +12,27 @@ Para la matriz del mundo a los marcadores QR, primeramente debemos crear una mat
 
 Teniendo tanto la matriz de rotación como el vector de traslación, simplemente nos queda unirlo en una matriz 4×4, añadiéndole un poco de *padding*, de tal forma que quede como la siguiente:
 
-| R T | | 0 1 |
+$$
+\begin{bmatrix}
+cos(α) & -sin(α) & 0 & X \\
+sin(α) & cos(α) & 0 & Y \\
+0 & 0 & 0 & Z \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 
 ## Matriz QR-Cámara
 
 Para resolver esta matriz, primeramente tenemos que encontrar los QR en la imagen. Para ello, he usado la función que viene dada en la documentación del ejercicio. Con ello, podemos obtener las esquinas de cada etiqueta y, usando la función `solvePNP` de OpenCV, podemos calcular tanto el vector de rotación como el vector de traslación. 
 
-En este caso, nuestro vector de rotación no tiene la forma deseada, ya que queremos que tenga forma 3×3 y la función `solvePNP` nos lo devuelve en 1×3. Para ello, usaremos la función `Rodríguez`, la cual convierte este vector a una matriz 3×3 como en el apartado anterior. Teniendo esto, simplemente deberíamos seguir los pasos del apartado anterior para resolver la matriz 4×4. Sin embargo, con ello obtendríamos la matriz que va de la cámara a los marcadores. Por lo tanto, tendríamos que invertir esta matriz para obtener la matriz que nosotros queremos, que es la que va del marcador a la cámara.
+En este caso, nuestro vector de rotación no tiene la forma deseada, ya que queremos que tenga forma 3×3 y la función `solvePNP` nos lo devuelve en 1×3. Para ello, usaremos la función `Rodrigues`, la cual convierte este vector a una matriz 3×3 como en el apartado anterior. Teniendo esto, simplemente deberíamos seguir los pasos del apartado anterior para resolver la matriz 4×4. Sin embargo, con ello obtendríamos la matriz que va de la cámara a los marcadores. Por lo tanto, tendríamos que invertir esta matriz para obtener la matriz que nosotros queremos, que es la que va del marcador a la cámara.
 
 Además, después de varias pruebas, me di cuenta de que los ejes del mundo de Gazebo y los ejes de OpenCV no eran exactamente los mismos. Por ello, a esta matriz, después de invertirla, hay que aplicarle una rotación de -90° en Z y otra rotación de -90° en X para que estos ejes coincidan y las transformaciones sean correctas.
 
 ## Matriz Cámara-Robot
 
-Resolver esta matriz es muy sencillo, ya que simplemente basta con mirar en los archivos del TurtleBot3 dónde está ubicada la cámara dentro del robot. Concretamente, dentro de los archivos SDF podemos ver que las posiciones de la cámara respecto a la base del robot son:
-
-x: X_CAM y: Y_CAM z: Z_CAM yaw: YAW_CAM
+Resolver esta matriz es muy sencillo, ya que simplemente basta con mirar en los archivos del TurtleBot3 dónde está ubicada la cámara dentro del robot. Concretamente, dentro de los archivos SDF podemos ver que las posiciones de la cámara respecto a la base del robot son: x: 0.069 y: -0.047 z: -0.107 yaw: 0 
 
 
 ## Matriz Final
