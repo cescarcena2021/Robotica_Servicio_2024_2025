@@ -39,6 +39,11 @@ Resolver esta matriz es muy sencillo, ya que simplemente basta con mirar en los 
 
 Para obtener esta matriz, basta con multiplicar en orden las tres matrices anteriores. La primera de ellas será la matriz de rotación, de la cual obtendremos el *yaw*. Por otro lado, de las componentes de la derecha obtendremos el vector de traslación, del cual obtendremos las coordenadas X, Y y Z del robot.
 
+$$
+RT_{MatrizFinal} = RT_{Mundo-QR} \cdot RT_{QR-Cámara} \cdot RT_{Cámara-Robot}
+$$
+
+
 ## Demostración
 
 ![image](https://github.com/user-attachments/assets/a1146d31-c2d3-4e89-926d-07463c1b0f18)
